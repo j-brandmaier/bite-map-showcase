@@ -18,11 +18,10 @@ Two tech-savvy but busy working parents sharing responsibility for feeding one t
 
 ## My role
 
-I'm a product manager, and I built this using Claude Code for the coding and Google Stitch for design drafts. I:
-
+I acted as lead product manager and strategist, using Claude Code for technical execution and Google Stitch for UI exploration. I:
 - wrote the requirements and kept them updated as the scope evolved
-- set the product principles the build had to follow
-- made the scope and trade-off calls of what to prioritize and what to defer
+- established product principles to govern design and architectural trade-offs
+- made the scope and prioritization calls
 - directed the design work and judged what the AI tools produced
 - tested the app on my own phone
 
@@ -30,12 +29,12 @@ I'm a product manager, and I built this using Claude Code for the coding and Goo
 
 | Need | Feature |
 |---|---|
-| Logging has to be fast | Meal type pre-selects from the time of day. The design target is 3 taps or fewer. |
+| Logging has to be frictionless | Meal type pre-selects from the time of day. The design target is 3 taps or fewer. |
 | We don't always know the details yet | A packed lunch can be logged before it's eaten and rated later. A photo can stand in for typing food names. |
-| We want to see how it went | A 7-day history shows foods, meal type, photos and a 1–5 "how much was eaten" rating. |
+| At-a-glance history | A 7-day history shows foods, meal type, photos and a 1–5 "how much was eaten" rating. |
 | Variety matters | Each meal can carry up to 3 cuisines and any of six nutrition groups (protein, fruit/veg, grain, dairy, treat, other). |
 | We're two people | Either parent can log or edit, and the other sees it within about 30 seconds. Works offline and syncs when it can. |
-| Privacy matters | No analytics or trackers. The data lives in a private backend that only the household can read. |
+| Privacy first | No analytics or trackers. The data lives in a private backend that only the household can read. |
 
 ## What I chose not to build yet
 
@@ -57,7 +56,7 @@ I treated Claude Code like a capable engineer who needs clear direction. The set
 - **Local data:** on-device SQLite, so logging never waits on a connection
 - **Shared data:** Supabase (Postgres) with row-level security so each household only sees its own rows
 - **Sign-in:** passwordless, using a 6-digit code emailed to the parent
-- **Sync:** push on every save, a refresh every 30 seconds while the app is open, last-write-wins on conflicts
+- **Sync:** optimistic local saves with automatic background sync every 30 seconds; conflict resolution handled via last-write-wins logic
 - **Running cost:** $0 on free tiers
 
 → **[Architecture overview](docs/architecture.md)**
