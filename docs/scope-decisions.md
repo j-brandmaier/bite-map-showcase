@@ -25,7 +25,7 @@ A shared 7-day History already answers *"what have we served lately?"* The defer
 
 ### What each cut saved
 * **Weekly summaries & Recipes:** Saved building dedicated creation workflows, scheduled background jobs, and multi-step data pipelines.
-* **Realtime sync:** WebSockets required complex merge logic across two code paths. Replacing it with a simple 30-second background refresh easily satisfied our <60s sync target with a fraction of the architectural complexity.
+* **Real-time sync:** WebSockets required complex merge logic across two code paths. Replacing it with a simple 30-second background refresh easily satisfied our <60s sync target with a fraction of the architectural complexity.
 
 ---
 
