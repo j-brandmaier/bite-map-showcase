@@ -1,10 +1,14 @@
 # Bite Map
 
 An Android app that helps two working parents keep track of what their toddler eats, so they can see at a glance what they've served lately and stop cooking the same few meals.
+**Screenshots:**
 
-> **Demo:** `[placeholder]`
-
-<!-- Screenshot strip: Log a meal | History | Photo viewer | Account -->
+<p>
+  <img src="https://github.com/j-brandmaier/bite-map-showcase/blob/main/media/screenshots/02%20-%20Log%20blank.jpg" width="23%">
+  <img src="https://github.com/j-brandmaier/bite-map-showcase/blob/main/media/screenshots/03%20-%20Log%20text.jpg" width="23%">
+  <img src="https://github.com/j-brandmaier/bite-map-showcase/blob/main/media/screenshots/04%20-%20Log%20details.jpg" width="23%">
+  <img src="https://github.com/j-brandmaier/bite-map-showcase/blob/main/media/screenshots/05%20-%20History.jpg" width="23%">
+</p>
 
 ## The problem
 
